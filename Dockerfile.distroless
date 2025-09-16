@@ -1,0 +1,14 @@
+FROM node:24-alpine AS builder
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
+WORKDIR /app
+COPY package.json package.json
+COPY pnpm-lock.yaml pnpm-lock.yaml
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
+COPY web/ web/
+RUN pnpm build
+
+FROM ghcr.io/dexidp/dex:v2.44.0-distroless
+ENV DEX_FRONTEND_DIR=/opt/jetski/dex/web
+COPY --from=builder /app/web /opt/jetski/dex/web

@@ -1,0 +1,3 @@
+pnpm-lock.yaml
+web/static/**/*
+web/templates/**/*

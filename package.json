@@ -1,0 +1,22 @@
+{
+  "name": "dex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i web/style.css -o web/static/dist/tailwind.css --minify",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.0",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.1.13"
+  }
+}
