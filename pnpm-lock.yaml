@@ -17,7 +17,7 @@ importers:
         version: 4.1.14
       prettier:
         specifier: ^3.6.2
-        version: 3.6.2
+        version: 3.7.4
 
 packages:
 
@@ -349,8 +349,8 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
-  prettier@3.6.2:
-    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
+  prettier@3.7.4:
+    resolution: {integrity: sha512-v6UNi1+3hSlVvv8fSaoUbggEM5VErKmmpGA7Pl3HF8V6uKY7rvClBOJlH6yNwQtfTueNkGVpOv/mtWL9L4bgRA==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -635,7 +635,7 @@ snapshots:
 
   picomatch@2.3.1: {}
 
-  prettier@3.6.2: {}
+  prettier@3.7.4: {}
 
   source-map-js@1.2.1: {}
 
